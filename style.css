@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-     transition-duration: 250ms;
+     transition-duration: 1ms;
      color: white;
      background-color: green ;
 }
