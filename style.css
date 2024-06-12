@@ -7,8 +7,9 @@ header {
 }
 
 header h1 a {
-  color: red;
-  
+  color: black;
+  Background-color: pink;
+  border: 4px solid black
 }
 
 header h1 a strong {
@@ -21,119 +22,57 @@ nav.header-buttons a {
   background-color: lightcoral;
   color: white;
   padding: 10px 20px;
-  text-decoration: none;
+  text-decoration: ;
   margin: 0 10px;
-  border-radius: 4px;
-  
+  border-radius: 10px;
 }
 
 nav.header-buttons a:hover {
-  background-color: red;
+  background-color: rgb(174, 121, 115);
+  transition-duration: 300ms;
 }
 
-/* JavaScript Styling */
+/* JavaScript button Styling */
 
 #timeDisplay {
   font-size: 25px;
-  color: blue;
+  color: White;
   font-weight: bold;
   text-align: center;
-  background-color: white
+  background-color: rgb(89, 89, 169);
+  border: 4px solid black;
+  border-radius: 20px
+}
+
+.main button {
+  background-color: lightcoral;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.main button:hover {
+  color: white;
 }
 
 /* body */
 
 body {
-  background-color: black;
-  height: 2160px max;
-  height: 1080px min;
-  width: 3840px max;
-  width: 1920px min;
-  margin: 20px;
-}
-   
-p1 {
-  color: black;
-  font-size: 25px;
-  font-family: cursive;
-  background-color: lightseagreen;
-  border: 3px solid black;
-  opacity: 85%;
+  background-color: white;
 }
 
-p2 {
-  color: black;
-  font-size: 25px;
-  font-family: cursive;
-  background-color: rgb(168, 178, 32);
-  border: 3px solid black;
-  opacity: 85%;
+.maintext {
+  background-color: pink;
+  border: 1px solid black;
+  padding: 3px;
 }
 
-ul1 li1{
-  color: yellow;
-  display: list-item;
-  font-size: 25px;
-  font-family: cursive;
-  background-color: rgb(32, 100, 178);
-  border: 3px solid black;
-  opacity: 85%;
+.ul1 {
+  border: 5px solid black;
+  background-color: rgb(223, 250, 114);
+  border-radius: 25px;
+  width: 100px;
+  padding: 50px 100px;
+  margin: 10px
 }
-
-ul1 li2 {
-  color: green;
-  display: list-item;
-  font-size: 25px;
-  font-family: cursive;
-  background-color: rgb(115, 32, 178);
-  border: 3px solid black;
-  opacity: 85%;
-}
-
-ul1 li3 {
-  color: purple;
-  display: list-item;
-  font-size: 25px;
-  font-family: cursive;
-  background-color: rgb(61, 178, 32);
-  border: 3px solid black;
-  opacity: 85%;
-}
-
-/* Body Buttons */
-
-.button1 button {
-  color: black;
-  font-size: 21px;
-  font-family: cursive;
-  margin: 50px;
-  background-color: lightcoral;
-  border: 4px solid black;
-  border-radius: 10px;
-}
-   
-.button1 button:hover {
-  transition-duration: 1ms;
-  color: white;
-}
-   
-.button2 button {
-  background-color: #00ff22;
-  color: #e5ff00;
-  border: 3px solid #b07d17;
-  border-radius: 8px;
-  margin: 25px;
-  font-family: Comic Sans, Comic Sans MS, Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  outline: 2px solid black;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  margin: 85px 0 0 650px;
-}
-   
-.button2 button:hover {
-  transition-duration: 1ms;
-  color: white;
-  background-color: green;
-}
-
-/* Footer */
