@@ -61,12 +61,27 @@ p2 {
 
 ul1 li1{
   color: yellow;
+  font-size: 25px;
+  font-family: cursive;
+  background-color: rgb(168, 178, 32);
+  border: 3px solid black;
+  opacity: 85%;
 }
 
 ul1 li2 {
   color: green;
+  font-size: 25px;
+  font-family: cursive;
+  background-color: rgb(168, 178, 32);
+  border: 3px solid black;
+  opacity: 85%;
 }
 
 ul1 li3 {
   color: purple;
+  font-size: 25px;
+  font-family: cursive;
+  background-color: rgb(168, 178, 32);
+  border: 3px solid black;
+  opacity: 85%;
 }
