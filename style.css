@@ -61,6 +61,10 @@ body {
   padding: 3px;
 }
 
+.maintext p {
+  text-align: center;
+}
+
 .ul1 {
   border: 5px solid black;
   background-color: rgb(223, 250, 114);
@@ -68,4 +72,17 @@ body {
   width: 100px;
   padding: 50px 100px;
   margin: 10px
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0 10px 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
