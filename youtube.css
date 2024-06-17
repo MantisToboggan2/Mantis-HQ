@@ -105,6 +105,20 @@ body {
   color: rgb(40, 40, 40);
 }
 
+.popularvideobox {
+  background-color: rgb(153, 183, 254);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px 100px 500px 100px;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  float: ;
+}
+
+.popularvideotext {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
 /* Footer */
 
 footer {
