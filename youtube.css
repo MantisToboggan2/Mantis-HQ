@@ -107,16 +107,23 @@ body {
 
 .popularvideobox {
   background-color: rgb(153, 183, 254);
-  border: 1px solid rgb(0, 0, 0);
-  padding: 5px 100px 500px 100px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 5px 50px 350px 50px;
   margin: 30px 0 0 0;
+  box-shadow: 10px 10px 5px rgb(57, 70, 89);
   display: inline-block;
-  float: ;
+  float: left;
 }
 
 .popularvideotext {
+  font-weight: 900px;
   color: rgb(255, 255, 255);
+  border: 1px solid white;
+  border-radius: 100px;
+  background-color: black;
   text-align: center;
+  padding: 5px 0 5px 0;
 }
 
 /* Footer */
