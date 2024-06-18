@@ -68,7 +68,7 @@ body {
   background-color: rgb(153, 183, 254);
   border: 1px solid rgb(0, 0, 0);
   padding: 0 10px 0 10px;
-  margin: 0
+  margin: 0;
 }
 
 .mainbodyheader h2 {
@@ -111,55 +111,54 @@ body {
 
 /* boxes */
 
-.youtubepageboxgroup1 {
+.youtubepageboxleft, .youtubepageboxmiddle, .youtubepageboxright {
+  background-color: rgb(153, 183, 254);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px 50px 50px 50px;
+  box-shadow: 10px 10px 5px rgb(57, 70, 89);
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  min-height: 400px;
 }
 
-.youtubepageboxleft {
-  background-color: rgb(153, 183, 254);
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 5px 50px 350px 50px;
-  margin: 30px 0 0 0;
-  box-shadow: 10px 10px 5px rgb(57, 70, 89);
-}
-
-.youtubepageboxmiddle {
-  background-color: rgb(153, 183, 254);
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 5px 50px 350px 50px;
-  margin: 30px 0 0 0;
-  box-shadow: 10px 10px 5px rgb(57, 70, 89);
-}
-
-.youtubepageboxright {
-  background-color: rgb(153, 183, 254);
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 5px 50px 350px 50px;
-  margin: 30px 0 0 0;
-  box-shadow: 10px 10px 5px rgb(57, 70, 89);
+.youtubepageboxleft:hover, .youtubepageboxmiddle:hover, .youtubepageboxright:hover {
+  background-color: rgb(195, 213, 255);
+  transition-duration: .5s;
 }
 
 .youtubepageboxtitletext {
   font-weight: 900px;
   color: rgb(255, 255, 255);
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 100px;
-  background-color: black;
+  background-color: rgb(40, 40, 40);
   text-align: center;
-  padding: 5px 0 5px 0;
+  padding: 5px 15px 5px 15px;
 }
 
-.popularvideolink {
+.videolink {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  text-align: center;
+  background-color: rgb(82, 139, 219);
+  border: 1px solid rgb(80, 79, 79);;
+  border-radius: 4px;
+  padding: 3px 3px 3px 3px;
 }
+
+.videolink:hover {
+  
+}
+
+.bmggea {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
 
 /* Footer */
 
