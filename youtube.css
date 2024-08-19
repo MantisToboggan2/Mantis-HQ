@@ -34,7 +34,6 @@ nav.header-buttons {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padd
 }
 
 nav.header-buttons a {
@@ -172,59 +171,20 @@ footer p {
 }
 
 
-/* Tablets */
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 1350px) {
   .header-logo {
     float: none;
-    margin: 7px auto;
+    margin: 14px auto;
     display: block;
-  }
-
-  header h1 {
-    margin: 25px 0 60px 0;
-    font-size: 28px;
-  }
-
-  nav.header-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav.header-buttons a {
-    font-size: 20px;
-    padding: 8px 16px;
-    margin: 20px 0;
-  }
-
-  .youtubepageboxgroup1 {
-    flex-direction: column;
-    align-items: center;
-
-  .youtubepageboxleft, 
-  .youtubepageboxmiddle, 
-  .youtubepageboxright {
-    flex: 0 1 100%;
-    max-width: 500px;
-    min-height: 400px;
-    margin-bottom: 50px;
-  }
-}
-
-/* Mobile Phones */
-@media (max-width: 480px) {
-  .header-logo {
-    float: none;
-    margin: 7px auto;
-    display: block;
-    width: 150px;
-    height: 140px;
+    width: 300px;
+    height: 280px;
   }
 
   header h1 {
     margin: 25px 0 50px 0;
-    font-size: 22px;
-    padding: 5px;
+    font-size: 30px;
+    padding: 35px;
   }
 
   nav.header-buttons {
@@ -233,33 +193,25 @@ footer p {
     align-items: center;
   }
 
+  .mainbodyheader {
+    margin-bottom: 70px;
+  }
+  
   nav.header-buttons a {
-    font-size: 18px;
-    padding: 6px 12px;
+    font-size: 25px;
+    padding: 25px 50px;
     margin: 20px 0;
   }
 
   .youtubepageboxgroup1 {
     flex-direction: column;
     align-items: center;
-  }
 
   .youtubepageboxleft, 
   .youtubepageboxmiddle, 
   .youtubepageboxright {
     flex: 0 1 100%;
-    max-width: 250px;
-    min-height: 300px;
+    min-height: 400px;
     margin-bottom: 50px;
-  }
-
-  .bmggea, .ycl, .mcrt {
-    width: 200px;
-    height: 200px;
-  }
-
-  .videolink {
-    font-size: 16px;
-    padding: 8px 40px;
   }
 }
