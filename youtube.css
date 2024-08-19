@@ -28,10 +28,13 @@ header h1 {
   padding: 0 10px;
 }
 
-/* Navigation Buttons */
+ /* Navigation Buttons */
 nav.header-buttons {
-  text-align: center;
-  margin: 0 0 0 -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padd
 }
 
 nav.header-buttons a {
@@ -74,30 +77,8 @@ body {
 
 
 
-.my {
+.mytc {
   color: rgb(40, 40, 40);
-}
-
-.youtube {
-  color: rgb(255, 0, 0);
-  text-shadow: -1px -1px 0 rgb(255, 255, 255);
-  background-color: rgb(40, 40, 40);
-  border: 3px solid rgb(255, 255, 255);
-  outline: 1px solid rgb(40, 40, 40);
-  padding: 3px 5px 3px 5px;
-  border-radius: 10px;
-}
-
-.youtube-button {
-  text-decoration: none;
-}
-
-.youtube-button:hover {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid rgb(0, 0, 0);
-  text-shadow: -1px -1px 0 rgb(0, 0, 0);
-  outline: 1px solid rgb(255, 255, 255);
-  transition-duration: .3s;
 }
 
 .channel {
@@ -130,13 +111,13 @@ body {
   align-items: center;
   min-height: 500px;
   box-sizing: border-box;
+  transition: transform 0.6s ease;
 }
 
 .youtubepageboxleft:hover, 
 .youtubepageboxmiddle:hover, 
 .youtubepageboxright:hover {
-  background-color: rgb(195, 213, 255);
-  transition-duration: .5s;
+  transform: translateY(-10px);
 }
 
 .youtubepageboxtitletext {
@@ -188,4 +169,97 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+  .header-logo {
+    float: none;
+    margin: 7px auto;
+    display: block;
+  }
+
+  header h1 {
+    margin: 25px 0 60px 0;
+    font-size: 28px;
+  }
+
+  nav.header-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.header-buttons a {
+    font-size: 20px;
+    padding: 8px 16px;
+    margin: 20px 0;
+  }
+
+  .youtubepageboxgroup1 {
+    flex-direction: column;
+    align-items: center;
+
+  .youtubepageboxleft, 
+  .youtubepageboxmiddle, 
+  .youtubepageboxright {
+    flex: 0 1 100%;
+    max-width: 500px;
+    min-height: 400px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .header-logo {
+    float: none;
+    margin: 7px auto;
+    display: block;
+    width: 150px;
+    height: 140px;
+  }
+
+  header h1 {
+    margin: 25px 0 50px 0;
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  nav.header-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.header-buttons a {
+    font-size: 18px;
+    padding: 6px 12px;
+    margin: 20px 0;
+  }
+
+  .youtubepageboxgroup1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .youtubepageboxleft, 
+  .youtubepageboxmiddle, 
+  .youtubepageboxright {
+    flex: 0 1 100%;
+    max-width: 250px;
+    min-height: 300px;
+    margin-bottom: 50px;
+  }
+
+  .bmggea, .ycl, .mcrt {
+    width: 200px;
+    height: 200px;
+  }
+
+  .videolink {
+    font-size: 16px;
+    padding: 8px 40px;
+  }
 }
