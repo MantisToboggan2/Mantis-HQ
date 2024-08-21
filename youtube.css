@@ -60,15 +60,14 @@ body {
   background-color: rgb(153, 183, 254);
   border: 1px solid rgb(0, 0, 0);
   padding: 0 10px;
-  margin: 0;
+  margin: 0 auto;
+  width: 25%;
+  border-radius: 50px;
 }
 .mainbodyheader h2 {
   text-align: center;
 }
 .mytc {
-  color: rgb(40, 40, 40);
-}
-.channel {
   color: rgb(40, 40, 40);
 }
 /* boxes */
@@ -96,12 +95,13 @@ body {
   align-items: center;
   min-height: 500px;
   box-sizing: border-box;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, background-color 0.6s ease;
 }
 .youtubepageboxleft:hover, 
 .youtubepageboxmiddle:hover, 
 .youtubepageboxright:hover {
   transform: translateY(-10px);
+  background-color: rgb(175, 198, 253);
 }
 .youtubepageboxtitletext {
   font-weight: 900px;
@@ -169,6 +169,7 @@ footer p {
   }
   .mainbodyheader {
     margin-bottom: 70px;
+    width: 53%;
   }
   nav.header-buttons a {
     font-size: 25px;
@@ -178,6 +179,9 @@ footer p {
   .youtubepageboxgroup1 {
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    margin: 30px auto;
+    padding: 0 10px;
   }
   .youtubepageboxleft, 
   .youtubepageboxmiddle, 
