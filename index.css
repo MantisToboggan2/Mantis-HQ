@@ -7,7 +7,6 @@ header {
   border: 10px solid rgb(0, 217, 255);
   outline: 1px solid rgb(0, 0, 0);
 }
-
 .header-logo {
   float: left;
   margin: 7px -200px 0 10px;
@@ -15,7 +14,6 @@ header {
   width: 179px;
   height: 168px;
 }
-
 header h1 {
   color: rgb(0, 0, 0);
   Background-color: rgb(0, 217, 255);
@@ -27,7 +25,6 @@ header h1 {
   display: inline-block;
   padding: 0 10px;
 }
-
  /* Navigation Buttons */
 nav.header-buttons {
   display: flex;
@@ -35,7 +32,6 @@ nav.header-buttons {
   align-items: center;
   margin: 0;
 }
-
 nav.header-buttons a {
   background-color: rgb(0, 217, 255);
   color: rgb(255, 255, 255);
@@ -49,7 +45,6 @@ nav.header-buttons a {
   text-shadow: -1px -1px 0 rgb(0, 0, 0);
   transition: background-color .3s, border .3s;
 }
-
 nav.header-buttons a:hover,
 nav.header-buttons a.active3 {
   background-color: rgb(0, 64, 255);
@@ -60,23 +55,57 @@ nav.header-buttons a.active3 {
 body {
   background: radial-gradient(circle, rgba(0,209,255,1) 0%, rgba(9,9,121,1) 81%, rgba(2,0,36,1) 100%, rgba(21,0,51,1) 100%);
 }
-
 .mainbodyheader {
   background-color: rgb(153, 183, 254);
   border: 1px solid rgb(0, 0, 0);
-  padding: 3px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 25%;
+  border-radius: 50px;
 }
-
 .mainbodyheader h2 {
   text-align: center;
 }
-
 #p1 {
   background-color:rgb(153, 183, 254);
   text-align: center;
   font-size: 30px;
+  padding: 25px;
+  margin: 50px auto;
+  width: 75%;
+  border-radius: 50px;
 }
-
+#p2 {
+  background-color:rgb(153, 183, 254);
+  text-align: center;
+  font-size: 30px;
+}
+#p3 {
+  background-color:rgb(153, 183, 254);
+  text-align: center;
+  font-size: 30px;
+  border: 5px dotted yellow;
+}
+/*
+#p4 {
+  background-color:rgb(153, 183, 254);
+  text-align: center;
+  font-size: 30px;
+  border: 5px dotted yellow;
+}
+#p5 {
+  background-color:rgb(153, 183, 254);
+  text-align: center;
+  font-size: 30px;
+  border: 5px dotted yellow;
+}
+#p6 {
+  background-color:rgb(153, 183, 254);
+  text-align: center;
+  font-size: 30px;
+  border: 5px dotted yellow;
+}
+*/
 /* Footer */
 footer {
   background-color: rgb(0, 0, 0);
@@ -88,11 +117,9 @@ footer {
   left: 0;
   width: 100%;
 }
-
 footer p {
   margin: 0;
 }
-
 /* Responsive Design */
 @media (max-width: 1350px) {
   .header-logo {
@@ -102,23 +129,38 @@ footer p {
     width: 300px;
     height: 280px;
   }
-
+  .mainbodyheader {
+    width: 60%;
+  }
   #p1 {
     margin-bottom: 70px;
+    border-radius: 40px;
   }
-  
+  #p2 {
+    
+  }
+  #p3 {
+    margin-bottom: 70px;
+  }
+  #p4 {
+    
+  }
+  #p5 {
+    
+  }
+  #p6 {
+    
+  }
   header h1 {
     margin: 25px 0 50px 0;
     font-size: 30px;
     padding: 35px;
   }
-
   nav.header-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   nav.header-buttons a {
     font-size: 25px;
     padding: 25px 50px;
