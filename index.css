@@ -1,3 +1,13 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Apply font across the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 /* Header */
 header {
   background: radial-gradient(circle, rgba(0,209,255,1) 0%, rgba(9,9,121,1) 36%, rgba(2,0,36,1) 82%, rgba(21,0,51,1) 100%);
@@ -95,38 +105,73 @@ header h1 {
 }
 /* body */
 body {
-  background: radial-gradient(circle, rgba(0,209,255,1) 0%, rgba(9,9,121,1) 81%, rgba(2,0,36,1) 100%, rgba(21,0,51,1) 100%);
+  background: radial-gradient(circle, rgba(0, 209, 255, 1) 0%, rgba(9, 9, 121, 1) 81%, rgba(2, 0, 36, 1) 100%, rgba(21, 0, 51, 1) 100%);
 }
 .mainbodyheader {
-  background-color: rgb(153, 183, 254);
-  border: 1px solid rgb(0, 0, 0);
-  padding: 0 10px;
-  margin: 0 auto;
-  width: 25%;
-  border-radius: 50px;
+  border: none;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 10px;
 }
 .mainbodyheader h2 {
   text-align: center;
+  color: #000000;
+  font-weight: 700;
 }
-#p1 {
-  background-color: rgb(153, 183, 254);
+/* Paragraph Styling */
+#p1, #p2 {
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  font-size: 18px;
+  color: #000000;
   text-align: center;
-  font-size: 30px;
-  padding: 25px;
-  margin: 50px auto;
-  width: 75%;
-  border-radius: 50px;
-}
-#p2 {
+  border-radius: 10px;
+  border: 1px black solid;
   background-color: rgb(153, 183, 254);
-  text-align: center;
-  font-size: 30px;
 }
 #p3 {
   background-color: rgb(153, 183, 254);
+  padding: 20px;
+  margin: 20px auto;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  font-size: 18px;
+  color: #000000;
   text-align: center;
-  font-size: 30px;
-  border: 5px dotted yellow;
+  color: yellow;
+}
+#p4 {
+  background-color: rgb(153, 183, 254);
+  padding: 20px;
+  margin: 20px auto;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  border: 3px yellow solid;
+}
+#p5 {
+  background-color: rgb(153, 183, 254);
+  padding: 20px;
+  margin: auto auto 70px auto;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  border: 3px yellow solid;
+}
+#p4:hover, #p5:hover {
+  transform: translateY(-10px);
 }
 /* Footer */
 footer {
@@ -147,11 +192,7 @@ footer p {
   .mainbodyheader {
     width: 70%;
   }
-  #p1 {
-    margin-bottom: 70px;
-    border-radius: 40px;
-  }
-  #p3 {
+  #p5 {
     margin-bottom: 70px;
   }
   header h1 {
