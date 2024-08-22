@@ -175,5 +175,6 @@ footer p {
     min-width: 125px;
     left: 50%;
     transform: translateX(-50%);
+    top: calc(100% + 20px);
   }
 }
