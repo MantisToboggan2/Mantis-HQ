@@ -145,7 +145,7 @@ footer p {
 /* Responsive Design */
 @media (max-width: 1350px) {
   .mainbodyheader {
-    width: 60%;
+    width: 70%;
   }
   #p1 {
     margin-bottom: 70px;
