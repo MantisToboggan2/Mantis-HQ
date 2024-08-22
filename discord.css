@@ -1,3 +1,9 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Apply font across the body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 /* Header */
 header {
   background: radial-gradient(circle, rgba(0,209,255,1) 0%, rgba(9,9,121,1) 36%, rgba(2,0,36,1) 82%, rgba(21,0,51,1) 100%);
@@ -101,6 +107,7 @@ body {
   background-color: rgb(153, 183, 254);
   border: 1px solid rgb(0, 0, 0);
   padding: 3px;
+  border-radius: 10px;
 }
 .mainbodyheader h2 {
   text-align: center;
