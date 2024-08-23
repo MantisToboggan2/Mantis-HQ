@@ -129,6 +129,12 @@ footer p {
 }
 /* Responsive Design */
 @media (max-width: 1350px) {
+  header {
+    background-image: url("logo.webp");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
   header h1 {
     margin: 15px auto;
   }
