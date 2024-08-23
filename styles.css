@@ -1,0 +1,415 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Apply font across the body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Header */
+header {
+  background: radial-gradient(circle, rgba(0,209,255,1) 0%, rgba(9,9,121,1) 36%, rgba(2,0,36,1) 82%, rgba(21,0,51,1) 100%);
+  text-align: center;
+  padding: 0 0 55px 0;
+  margin: 0 0 20px 0;
+  border: 10px solid rgb(0, 217, 255);
+  outline: 1px solid rgb(0, 0, 0);
+  position: relative;
+}
+.header-logo {
+  float: left;
+  margin: 10px -200px 0 10px;
+  border: 3px solid rgb(255, 255, 255);
+  width: 179px;
+  height: 168px;
+}
+header h1 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 217, 255);
+  margin: 15px 0 75px 0;
+  font-size: 34px;
+  border: 5px solid rgb(0, 64, 255);
+  outline: 1px solid rgb(0, 217, 255);
+  border-radius: 50px;
+  display: inline-block;
+  padding: 0 10px;
+}
+/* Dropdown Menu */
+.header-nav {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Hamburger Button */
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 40px;
+  padding: 0;
+}
+.bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(0, 217, 255);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+/* Change color on hover */
+.dropdown:hover .bar {
+  background-color: rgb(0, 64, 255);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 217, 255);
+  min-width: 160px;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 64, 255);
+  z-index: 1;
+  top: 100%;
+  min-width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  background-color: rgb(0, 64, 255);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* body shared across all pages */
+body {
+    background: radial-gradient(circle, rgba(0, 209, 255, 1) 0%, rgba(9, 9, 121, 1) 81%, rgba(2, 0, 36, 1) 100%, rgba(21, 0, 51, 1) 100%);
+  }
+/* Individual styles | Contact */
+#contact .dropdown-content a.active1 {
+    background-color: rgb(54, 104, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+#contact .mainbodyheader {
+    background-color: rgb(153, 183, 254);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  }
+  #contact .mainbodyheader h2 {
+    text-align: center;
+  }
+  /* Responsive Design */
+  @media (max-width: 1350px) {
+    #contact header h1 {
+      margin: 15px auto;
+    }
+    #contact .mainbodyheader {
+      margin-bottom: 70px;
+    }
+  }
+/* Discord */
+#discord .dropdown-content a.active2 {
+    background-color: rgb(54, 104, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+#discord .mainbodyheader {
+    background-color: rgb(153, 183, 254);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  }
+  #discord .mainbodyheader h2 {
+    text-align: center;
+  }
+  /* Responsive Design */
+  @media (max-width: 1350px) {
+    #discord header h1 {
+      margin: 15px auto;
+    }
+    #discord .mainbodyheader {
+      margin-bottom: 70px;
+    }
+  }
+/* Index */
+#index .dropdown-content a.active3 {
+    background-color: rgb(54, 104, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  #index .mainbodyheader {
+    background-color: rgb(153, 183, 254);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  }
+  #index .mainbodyheader h2 {
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+}
+  /* Paragraph Styling */
+  #index .topbox {
+    padding: 20px;
+    margin: 20px auto 75px auto;
+    width: 70%;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: rgb(153, 183, 254);
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+}
+  #index #p3 {
+    background-color: rgb(153, 183, 254);
+    padding: 20px;
+    margin: 20px auto 75px auto;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    color: rgb(246, 255, 0);
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    letter-spacing: 1px;
+ }
+  #index #p4 {
+    background-color: rgb(153, 183, 254);
+    padding: 20px;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+    border: 3px yellow solid;
+}
+  #index #p5 {
+    background-color: rgb(153, 183, 254);
+    padding: 20px;
+    margin: auto auto 75px auto;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+    border: 3px yellow solid;
+}
+  #index #p4:hover, #index #p5:hover {
+    transform: translateY(-10px);
+}
+  /* Responsive Design */
+  @media (max-width: 1350px) {
+    #index .mainbodyheader {
+      width: 70%;
+    }
+    #index header h1 {
+      margin: 15px auto;
+    }
+    #index .topbox, #index #p3, #index #p4 {
+      width: 80%;
+      margin: 25px auto 0 auto;
+    }
+    #index #p5 {
+      width: 80%;
+      margin: 25px auto 75px auto;
+    }
+  }
+/* Minecraft */
+#minecraft .dropdown-content a.active4 {
+    background-color: rgb(54, 104, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+#minecraft .mainbodyheader {
+    background-color: rgb(153, 183, 254);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  }
+  #minecraft .mainbodyheader h2 {
+    text-align: center;
+  }
+  /* Responsive Design */
+  @media (max-width: 1350px) {
+    #minecraft header h1 {
+      margin: 15px auto;
+    }
+    #minecraft .mainbodyheader {
+      margin-bottom: 70px;
+    }
+  }
+/* Youtube */
+#youtube .dropdown-content a.active5 {
+    background-color: rgb(54, 104, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+#youtube .mainbodyheader {
+    background-color: rgb(153, 183, 254);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  }
+  #youtube .mainbodyheader h2 {
+    text-align: center;
+  }
+  #youtube .mytc {
+    color: rgb(40, 40, 40);
+  }
+  /* boxes */
+  #youtube .youtubepageboxgroup1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 10px;
+  }
+  #youtube .youtubepageboxleft, #youtube .youtubepageboxmiddle, #youtube .youtubepageboxright {
+    background-color: rgb(153, 183, 254);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 10px 50px 10px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    box-sizing: border-box;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+  }
+  #youtube .youtubepageboxleft:hover, #youtube .youtubepageboxmiddle:hover, #youtube .youtubepageboxright:hover {
+    transform: translateY(-10px);
+    background-color: rgb(175, 198, 253);
+  }
+  #youtube .youtubepageboxtitletext {
+    font-weight: 900px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 5px 15px;
+  }
+  #youtube .videolink {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 139, 219);
+    border: 1px solid rgb(80, 79, 79);;
+    border-radius: 4px;
+    padding: 10px 50px;
+    margin: 25px 0 0 0;
+    font-size: 20px;
+  }
+  #youtube .videolink:hover {
+    background-color: rgb(110, 170, 255);
+  }
+  #youtube .bmggea, #youtube .ycl, #youtube .mcrt {
+    border-radius: 250px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    width: 250px;
+    height: 250px;
+  }
+  /* Responsive Design */
+  @media (max-width: 1350px) {
+    #youtube .mainbodyheader {
+        margin-bottom: 70px;
+        width: 70%;
+      }
+    #youtube header h1 {
+      margin: 15px auto;
+    }
+    #youtube .youtubepageboxgroup1 {
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
+    #youtube .youtubepageboxleft, #youtube .youtubepageboxmiddle, #youtube .youtubepageboxright {
+      flex: 0 1 100%;
+      min-height: 400px;
+      margin-bottom: 50px;
+    }
+}
+/* Footer all pages*/
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  footer p {
+    margin: 0;
+  }
+  /* Responsive Design all pages*/
+@media (max-width: 1350px) {
+    header {
+      background-image: url("logo.webp");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+    .header-logo {
+        display: none;
+    }
+    .dropbtn {
+        width: 30px;
+        height: 20px;
+      }
+    .dropdown-content {
+        min-width: 125px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 20px);
+    }
+    nav.header-buttons a {
+        font-size: 25px;
+        padding: 25px 50px;
+        margin: 20px 0;
+    }
+    .header-nav {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
