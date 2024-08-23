@@ -120,7 +120,7 @@ body {
 /* Paragraph Styling */
 .topbox {
   padding: 20px;
-  margin: 20px auto 300px auto;
+  margin: 20px auto 75px auto;
   width: 70%;
   font-size: 18px;
   color: #000000;
@@ -160,7 +160,7 @@ body {
 #p5 {
   background-color: rgb(153, 183, 254);
   padding: 20px;
-  margin: auto;
+  margin: auto auto 75px auto;
   width: 95%;
   border-radius: 10px;
   box-shadow: 7px 7px 17px rgb(0, 0, 0);
