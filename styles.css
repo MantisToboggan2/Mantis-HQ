@@ -113,6 +113,54 @@ body {
   #contact .mainbodyheader h2 {
     text-align: center;
   }
+  /* Form Styles */
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+
+input[type="email"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(27, 27, 27, 0.8);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  background: rgb(10, 116, 218);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: rgb(8, 107, 181);
+}
   /* Responsive Design */
   @media (max-width: 1350px) {
     #contact header h1 {
