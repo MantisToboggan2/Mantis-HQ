@@ -207,6 +207,36 @@ body {
     text-align: center;
     padding: 5px 15px;
 }
+.discordpageboxgroup2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+  width: 100%;
+  margin: 30px 0;
+  padding: 0 10px;
+}
+.discordpageboxleftdesc, .discordpageboxrightdesc {
+  background-color: rgb(153, 183, 254);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 10px 50px 10px;
+  box-shadow: 10px 10px 15px rgb(0, 0, 0);
+  flex: 0 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+}
+.discordpageboxleftdesc:hover, .discordpageboxrightdesc:hover {
+  transform: translateY(-10px);
+}
+.discordpagedescleft, .discordpagedescright {
+ color: yellow;
+ text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
   /* Responsive Design */
   @media (max-width: 1350px) {
     #discord header h1 {
@@ -214,6 +244,7 @@ body {
     }
     #discord .mainbodyheader {
       margin-bottom: 70px;
+      width: 60%;
     }
     .discordpageboxgroup1 {
       flex-direction: column;
@@ -226,6 +257,9 @@ body {
       flex: 0 1 100%;
       min-height: 400px;
       margin-bottom: 50px;
+    }
+    .discordpageboxgroup2, .discordpagedescleft, .discordpagedescright, .discordpageboxleftdesc, .discordpageboxrightdesc {
+      display: none; /* Ths is the going solution on mobile cause the descriptions wont be under each box on mobile */
     }
 }
 /* Index */
@@ -291,7 +325,7 @@ body {
   #index #p5 {
     background-color: rgb(153, 183, 254);
     padding: 20px;
-    margin: auto auto 75px auto;
+    margin: 20px auto;
     width: 95%;
     border-radius: 10px;
     box-shadow: 7px 7px 17px rgb(0, 0, 0);
@@ -301,7 +335,20 @@ body {
     transition: transform 0.6s ease, background-color 0.6s ease;
     border: 3px yellow solid;
 }
-  #index #p4:hover, #index #p5:hover {
+#index #p6 {
+  background-color: rgb(153, 183, 254);
+  padding: 20px;
+  margin: auto auto 75px auto;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  border: 3px yellow solid;
+}
+  #index #p4:hover, #index #p5:hover, #index #p6:hover {
     transform: translateY(-10px);
 }
   /* Responsive Design */
