@@ -1,12 +1,7 @@
-/* font now self hosted as to not rely on googles api */
-@font-face {
-  font-family: 'oldstandard';
-       url('OldStandardTT-Bold.ttf') format('truetype');
-  font-weight: 800;
-}
 /* Apply font across the body */
 body {
-  font-family: 'oldstandard';
+  font-family: 'Courier New', monospace;
+  font-weight: 800;
 }
 /* Header */
 header {
