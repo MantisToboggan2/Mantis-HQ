@@ -1,8 +1,12 @@
-/* Import font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font now self hosted as to not rely on googles api */
+@font-face {
+  font-family: 'oldstandard';
+       url('OldStandardTT-Bold.ttf') format('truetype');
+  font-weight: 800;
+}
 /* Apply font across the body */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'oldstandard';
 }
 /* Header */
 header {
@@ -338,6 +342,19 @@ body {
 #index #p6 {
   background-color: rgb(153, 183, 254);
   padding: 20px;
+  margin: 20px auto;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  border: 3px yellow solid;
+}
+#index #p7 {
+  background-color: rgb(153, 183, 254);
+  padding: 20px;
   margin: auto auto 75px auto;
   width: 95%;
   border-radius: 10px;
@@ -348,7 +365,7 @@ body {
   transition: transform 0.6s ease, background-color 0.6s ease;
   border: 3px yellow solid;
 }
-  #index #p4:hover, #index #p5:hover, #index #p6:hover {
+  #index #p4:hover, #index #p5:hover, #index #p6:hover, #index #p7:hover {
     transform: translateY(-10px);
 }
   /* Responsive Design */
@@ -375,15 +392,114 @@ body {
     font-weight: bold;
   }
 #minecraft .mainbodyheader {
-    background-color: rgb(153, 183, 254);
-    border: 1px solid rgb(0, 0, 0);
-    padding: 3px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 17px rgb(0, 0, 0);
+  background-color: rgb(153, 183, 254);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 7px 7px 17px rgb(0, 0, 0);
   }
   #minecraft .mainbodyheader h2 {
     text-align: center;
   }
+  .minecraftpageboxgroup1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 10px;
+}
+.minecraftpageboxleft, .minecraftpageboxright {
+    background-color: rgb(153, 183, 254);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 10px 50px 10px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    box-sizing: border-box;
+    transition: transform 0.6s ease, background-color 0.6s ease;
+}
+.minecraftpageboxleft:hover, .minecraftpageboxright:hover {
+  transform: translateY(-10px);
+  background-color: rgb(175, 198, 253);
+}
+.minecraftpageboxtitletextleft {
+    font-weight: 900px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 5px 15px;
+}
+.modpackimage, .serverimage {
+  border-radius: 250px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  width: 250px;
+  height: 250px;
+}
+.modpacklink, #minecraft .serverlink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(82, 139, 219);
+  border: 1px solid rgb(80, 79, 79);;
+  border-radius: 4px;
+  padding: 10px 50px;
+  margin: 25px 0 0 0;
+  font-size: 20px;
+}
+.modpacklink:hover, #minecraft .serverlink:hover {
+  background-color: rgb(110, 170, 255);
+}
+.minecraftpageboxtitletextright {
+    font-weight: 900px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 5px 15px;
+}
+.minecraftpageboxgroup2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+  width: 100%;
+  margin: 30px 0;
+  padding: 0 10px;
+}
+.minecraftpageboxleftdesc, .minecraftpageboxrightdesc {
+  background-color: rgb(153, 183, 254);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 10px 50px 10px;
+  box-shadow: 10px 10px 15px rgb(0, 0, 0);
+  flex: 0 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+}
+.minecraftpageboxleftdesc:hover, .minecraftpageboxrightdesc:hover {
+  transform: translateY(-10px);
+}
+.minecraftpagedescleft, .minecraftpagedescright {
+ color: yellow;
+ text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
   /* Responsive Design */
   @media (max-width: 1350px) {
     #minecraft header h1 {
@@ -391,8 +507,24 @@ body {
     }
     #minecraft .mainbodyheader {
       margin-bottom: 70px;
+      width: 55%;
     }
-  }
+    .minecraftpageboxgroup1 {
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
+    .minecraftpageboxleft, .minecraftpageboxright {
+      flex: 0 1 100%;
+      min-height: 400px;
+      margin-bottom: 50px;
+    }
+    .minecraftpageboxgroup2, .minecraftpagedescleft, .minecraftpagedescright, .minecraftpageboxleftdesc, .minecraftpageboxrightdesc {
+      display: none; /* Ths is the going solution on mobile cause the descriptions wont be under each box on mobile */
+    }
+}
 /* Youtube */
 #youtube .dropdown-content a.active5 {
     background-color: rgb(54, 104, 255);
