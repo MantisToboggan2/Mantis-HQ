@@ -397,7 +397,7 @@ button[type="submit"]:hover {
 #index #p7 {
   background-color: rgb(153, 183, 254);
   padding: 20px;
-  margin: auto auto 75px auto;
+  margin: 20px auto;
   width: 95%;
   border-radius: 10px;
   box-shadow: 7px 7px 17px rgb(0, 0, 0);
@@ -411,7 +411,7 @@ button[type="submit"]:hover {
 #index #p8 {
   background-color: rgb(153, 183, 254);
   padding: 20px;
-  margin: 20px auto;
+  margin: auto auto 75px auto;
   width: 95%;
   border-radius: 10px;
   box-shadow: 7px 7px 17px rgb(0, 0, 0);
